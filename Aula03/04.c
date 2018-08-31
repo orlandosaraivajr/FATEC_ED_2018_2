@@ -21,7 +21,8 @@ int main(int argc, char *argv[]){
     printf(" Digite o número de elementos: \n");
     scanf("%d", &contador);
 
-    vetor_alunos = (CadastroAluno*) malloc(contador * sizeof(CadastroAluno));
+    // vetor_alunos = (CadastroAluno*) malloc(contador * sizeof(CadastroAluno));
+    vetor_alunos = new CadastroAluno[contador];
 
     /*    Entrada de dados    */
     for(x = 0; x < contador; x++) {

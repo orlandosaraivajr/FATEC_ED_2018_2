@@ -11,11 +11,12 @@ int main(int argc, char *argv[]){
     numero_2 = &numero_1;
     printf("O numero digitado foi: %d \n", *numero_2);
 
-    /* Alocação no heap */
-    numero_2 = (int *)malloc(sizeof(int));
-    *numero_2 = 10;
+    numero_2 = new int;
+    //numero_2 = (int *)malloc(sizeof(int));
+    *numero_2 = 20;
     printf("Alocado em heap 1: %d \n", *numero_2);
-    free(numero_2);
+    // free(numero_2);
+    delete numero_2;
 
     numero_2 = (int *)malloc(sizeof(int));
     *numero_2 = 15;

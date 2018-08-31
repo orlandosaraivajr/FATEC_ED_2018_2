@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
 /*
 Vetor de elementos em C.
 */
@@ -9,7 +10,7 @@ int main(int argc, char *argv[]){
     int x;
 
     printf(" Digite o número de elementos: \n");
-    scanf("%d", &numero_elementos);
+    std::cin >> numero_elementos;
 
     vetor_numeros = (int *)malloc(numero_elementos * sizeof(int));
 
