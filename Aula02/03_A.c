@@ -21,20 +21,23 @@ int main(int argc, char *argv[]){
         string disciplina;
         float nota_1;
         float nota_2;
+        string tipo_sanguineo;
     };
 
-    struct cadastro vetor_aluno;
+    struct cadastro variavel_aluno;
 
-    vetor_aluno.nome = recebe_nome_aluno();
-    vetor_aluno.disciplina = recebe_disciplina_aluno();
-    vetor_aluno.nota_1 = recebe_nota_1();
-    vetor_aluno.nota_2 = recebe_nota_2();
+    variavel_aluno.nome = "Orlando Saraiva";
+    variavel_aluno.disciplina = "A melhor de sábado";
+    variavel_aluno.nota_1 = 7.4;
+    variavel_aluno.nota_2 = 5.2;
+    variavel_aluno.tipo_sanguineo = "O+";
 
-    cout << "Nome = " << vetor_aluno.nome << endl;
-    cout << "Disciplina = " << vetor_aluno.disciplina << endl;
-    cout << "Nota 1 = " << vetor_aluno.nota_1 << endl;
-    cout << "Nota 2 = " << vetor_aluno.nota_2 << endl;
-    cout << "Média Simples = " << (vetor_aluno.nota_1 + vetor_aluno.nota_2) / 2 << endl;
+    cout << "Nome = " << variavel_aluno.nome << endl;
+    cout << "Disciplina = " << variavel_aluno.disciplina << endl;
+    cout << "Nota 1 = " << variavel_aluno.nota_1 << endl;
+    cout << "Nota 2 = " << variavel_aluno.nota_2 << endl;
+    cout << "Tipo Sanguineo = " << variavel_aluno.tipo_sanguineo << endl;
+    cout << "Média Simples = " << (variavel_aluno.nota_1 + variavel_aluno.nota_2) / 2 << endl;
     return 0;
 }
 
